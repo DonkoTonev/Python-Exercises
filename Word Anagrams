@@ -1,0 +1,18 @@
+from collections import Counter
+
+word = input()
+
+n = int(input())
+
+otgovori = []
+
+for _ in range(n):
+    test_word = input().strip()
+
+    if Counter(word) == Counter(test_word):
+        otgovori.append("Yes")
+    else:
+        otgovori.append("No")
+
+for y in otgovori:
+    print(y)
