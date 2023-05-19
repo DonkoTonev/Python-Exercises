@@ -1,0 +1,19 @@
+N = input()
+
+digits = [int(digit) for digit in str(N)]
+
+rezults = []
+
+suM = digits[0] + digits[1] + digits[2]
+rezults.append(suM)
+
+proizvedenie = digits[0] * digits[1] * digits[2]
+rezults.append(proizvedenie)
+
+proizvISyb1 = digits[0] * digits[1] + digits[2]
+rezults.append(proizvISyb1)
+
+proizvISyb2 = digits[0] + digits[1] * digits[2]
+rezults.append(proizvISyb2)
+
+print(max(rezults))
