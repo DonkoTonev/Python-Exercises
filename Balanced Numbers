@@ -1,0 +1,11 @@
+suma = 0
+
+while True:
+    number = int(input())
+
+    digits = [int(digit) for digit in str(number)]
+    if digits[1] != digits[0] + digits[2]:
+        break
+    suma += number
+
+print(suma)
