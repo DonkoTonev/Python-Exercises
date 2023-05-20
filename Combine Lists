@@ -1,0 +1,26 @@
+red1 = input().split(',')
+red2 = input().split(',')
+
+
+masiv1 = []
+masiv2 = []
+
+for i in red1:
+     i = int(i)
+     masiv1.append(i)
+
+for k in red2:
+     k = int(k)
+     masiv2.append(k)
+
+final = []
+
+if len(masiv1) == len(masiv2):
+     final = [item for sublist in zip(masiv1, masiv2) for item in sublist]
+
+
+output = ''
+for n in final:
+     output = output + str(n) + ','
+
+print(output.removesuffix(','))
