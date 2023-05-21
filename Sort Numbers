@@ -1,0 +1,20 @@
+numbers = input().split(', ')
+
+chisla = []
+
+for i in numbers:
+    chisla.append(int(i))
+
+nai_golemo = 1
+kraen = []
+for k in chisla:
+    if k >= nai_golemo:
+        kraen.append(k)
+
+kraen.sort(reverse=True)
+
+output = ''
+for n in kraen:
+    output = output + str(n) + ','
+
+print(output.removesuffix(','))
